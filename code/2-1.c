@@ -3,7 +3,7 @@
 void print_arr(int* p, int size){
     printf("%zu\n", sizeof(p));
     for(int i = 0; i < size; i++)
-        printf("%d", *(p + i));
+        printf("%d ", *(p + i));
     printf("\n");
 }
 
