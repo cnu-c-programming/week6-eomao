@@ -6,7 +6,6 @@ int sum_2d_arr(int(*row)[3], int size){
         for(int j = 0; j < sizeof(*row)/sizeof(int); j++){
             sum += *(*(row + i) + j);
         }
-        row++; 
     }
     return sum;
 }
