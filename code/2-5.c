@@ -6,6 +6,6 @@ int main(){
     int** pp = &p;
 
     for(int i = 0; i < 6; i++){
-        printf("%d", *(*pp +i));
+        printf("%d ", *(*pp +i));
     }
 }
