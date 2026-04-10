@@ -1,18 +1,19 @@
 #include <stdio.h>
 
-int sum_2d_arr(int(*row)[3], int size){
-    int sum = 0;
-    for(int i = 0; i < size; i++){
-        for(int j = 0; j < sizeof(*row)/sizeof(int); j++){
-            sum += *(*(row + i) + j); 
-        }
-
-    }
-    return sum;
+void print_arr(int* p, int size){
+    printf("%zu\n", sizeof(p));
+    for(int i = 0; i < size; i++)
+        printf("%d", *(p + i));
+    printf("\n");
 }
 
 int main(){
-    int arr[2][3] = {1,2,3,4,5,6};
+    int arr[5] = {1,2,3,4,5};
 
-    printf("%d\n", sum_2d_arr(arr,2));
+    printf("%zu\n", sizeof(arr));
+    for(int i = 0; i < 5; i++)
+        printf("%d", *(arr+i));
+    printf("\n");
+
+    print_arr(arr, 5);
 }
