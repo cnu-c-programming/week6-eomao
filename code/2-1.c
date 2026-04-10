@@ -12,7 +12,7 @@ int main(){
 
     printf("%zu\n", sizeof(arr));
     for(int i = 0; i < 5; i++)
-        printf("%d", *(arr+i));
+        printf("%d ", *(arr+i));
     printf("\n");
 
     print_arr(arr, 5);
